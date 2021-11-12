@@ -1,0 +1,21 @@
+# 配置端口
+server:
+  port: 8080
+
+#配置freemarker
+spring:
+  freemarker:
+    suffix: .html
+    cache: false
+  profiles:
+    active: dev
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    call-setters-on-nulls: true
+    default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
+  mapper-locations: classpath*:/mapper/*.xml
+  type-aliases-package: com.teno.entity
+  type-enums-package: com.teno.enums
+# mybatis-plus配置

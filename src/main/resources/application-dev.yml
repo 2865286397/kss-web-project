@@ -1,0 +1,15 @@
+spring:
+#  redis:
+#    database: 0
+#    host: 159.75.140.97
+#    port: 6379
+#    password: 1234qwer
+#    connect-timeout: 10000
+  # 配置数据库连接
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://159.75.140.97:3306/kss-web-project?serverTimezone=GMT%2b8&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 1234qwer
+
